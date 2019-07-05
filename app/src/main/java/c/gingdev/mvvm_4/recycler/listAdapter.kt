@@ -62,9 +62,5 @@ abstract class listAdapter<VM: ListViewModel, BINDING: ViewDataBinding>(
 
     override fun onBindViewHolder(holder: listHolder<BINDING>, position: Int) {
         holder.bind(listViewModel!!.list[position])
-
-        holder.itemView.setOnClickListener {
-            listViewModel.list[position].name.set("앙 눌렸띠")
-        }
     }
 }
